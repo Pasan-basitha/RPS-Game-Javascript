@@ -1,0 +1,44 @@
+:root{
+    --model-duration:1s;
+}
+.model{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color:rgba(0, 0,0, 0.5);
+}
+
+.model-content{
+    background:white;
+    text-align: center;
+    margin: 10% auto;
+    text-align: center;
+    width: 350px;
+    border-radius: 10px;
+    padding: 3rem;
+    animation-name: modalopen;
+    animation-duration: var(--model-duration);
+}
+
+.model-content h1{
+    margin-bottom: 1rem;
+}
+
+.model-content p{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+@keyframes modalopen {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
